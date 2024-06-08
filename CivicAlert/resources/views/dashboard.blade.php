@@ -4,10 +4,8 @@
 <!-- Start wrapper-->
  <div id="wrapper">
  
-<<<<<<< HEAD
-    
-=======
-    <!--Start sidebar-wrapper-->
+
+    {{-- <!--Start sidebar-wrapper-->
      <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
        <div class="brand-logo">
         <a href="index.html">
@@ -43,7 +41,7 @@
       </ul>
      
      </div>
-     <!--End sidebar-wrapper-->
+     <!--End sidebar-wrapper--> --}}
   
   <!--Start topbar header-->
   <header class="topbar-nav">
@@ -110,7 +108,7 @@
   </nav>
   </header>
   <!--End topbar header-->
->>>>>>> 6be256bab474c07610d725ac8a7568dfc69a3483
+
   
   <div class="clearfix"></div>
       

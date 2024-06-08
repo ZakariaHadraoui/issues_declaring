@@ -14,7 +14,7 @@
                         <i class="bi bi-lightbulb d-block display-1 fw-normal text-secondary mb-3"></i>
                         <h3 class="mb-3"> des pannes d'éclairage</h3>
                         <p>Les pannes d'éclairage public peuvent rendre les rues moins sûres la nuit et accroître le risque d'accidents. En signalant ces pannes, vous aidez les services municipaux à rétablir rapidement un éclairage adéquat, améliorant ainsi la sécurité</p>
-                        <a href={{Route('dec')}}>Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href={{Route('declaration')}}>Read More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>

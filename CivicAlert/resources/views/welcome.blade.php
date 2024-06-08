@@ -16,8 +16,11 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Réparez Votre Ville</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Ensemble pour une Ville Meilleure !</h3>
+                        @if(Auth::check())
                         <a href="{{ route('profil', ['id' => Auth::user()->id]) }}" class="btn btn-success py-md-3 px-md-5 me-3 ">Déclarer</a>
-                        <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
+                        @endif
+                        
+                                            <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
             </div>

@@ -16,4 +16,5 @@ class userController extends Controller
         return view('profil', compact('user'));
     }
     
+    
 }
