@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<<<<<<< HEAD
     <head>
         <meta charset="utf-8">
         <title>SafeCam - CCTV Website Template</title>
