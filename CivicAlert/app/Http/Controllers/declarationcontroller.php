@@ -11,4 +11,5 @@ class declarationcontroller extends Controller
     {
             return view('declaration');
     }
+    
 }

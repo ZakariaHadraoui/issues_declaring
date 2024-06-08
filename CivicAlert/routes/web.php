@@ -49,6 +49,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/profilee/{id}', [userController::class, 'show'])->name('profil');
     Route::get('/declaration',[declarationcontroller::class,'show'])->name('declaration');
+    
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
