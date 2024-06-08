@@ -34,7 +34,7 @@
             {{-- @include('layouts.navigation') --}}
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
                 <a href="index.html" class="navbar-brand ms-lg-5">
-                    <h1 class="display-5 m-0 text-primary">Safe<span class="text-secondary">Cam</span></h1>
+                    <h1 class="display-5 m-0 text-primary">Civic<span class="text-secondary">Alert</span></h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>

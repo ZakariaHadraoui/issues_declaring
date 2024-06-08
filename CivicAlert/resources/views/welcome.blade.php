@@ -7,42 +7,32 @@
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           
           </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h5 class="text-white text-uppercase animated bounceInDown">Best Security Services</h5>
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Safe & Secure Home For Your Family</h1>
+                        <h5 class="text-white text-uppercase animated bounceInDown">Réparez Votre Ville</h5>
+                        <h2 class="display-1 text-white mb-md-4 animated zoomIn">Ensemble pour une Ville Meilleure : Signalez les Problèmes Urbains Ici!</h2>
                         <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Quote</a>
                         <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                <img class="w-100" src="img/embout.jpg" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h5 class="text-white text-uppercase animated bounceInDown">Best Security Services</h5>
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Safe & Secure Home For Your Family</h1>
+                        <h5 class="text-white text-uppercase animated bounceInDown">Détecter, Signaler, Résoudre</h5>
+                        <h2 class="display-1 text-white mb-md-4 animated zoomIn">Rendez Votre Ville Meilleure : Signalez en Clics!</h2>
                         <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Quote</a>
                         <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="w-100" src="img/carousel-3.jpg" alt="Image">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3" style="max-width: 900px;">
-                        <h5 class="text-white text-uppercase animated bounceInDown">Best Security Services</h5>
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Safe & Secure Home For Your Family</h1>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Quote</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
-                    </div>
-                </div>
-            </div>
+           
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
             data-bs-slide="prev">
@@ -54,6 +44,121 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+         <!-- About Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mb-4">
+                        <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h5>
+                        <h1 class="display-5 mb-0">We Offers Quality CCTV Systems & Services</h1>
+                    </div>
+                    <h4 class="text-body fst-italic mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore</h4>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-primary d-flex flex-column justify-content-center text-center border-bottom border-5 border-secondary rounded p-3" style="height: 200px;">
+                                <i class="fa fa-star fa-4x text-white mb-4"></i>
+                                <h4 class="text-white mb-0">15 Years Experience</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.9s">
+                            <div class="bg-secondary d-flex flex-column justify-content-center text-center border-bottom border-5 border-primary rounded p-3" style="height: 200px;">
+                                <i class="fa fa-award fa-4x text-white mb-4"></i>
+                                <h4 class="text-white mb-0">Award Winning</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h5>
+                <h1 class="display-5 mb-0">Our Excellent CCTV Security Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="flaticon-cctv d-block display-1 fw-normal text-secondary mb-3"></i>
+                            <h5 class="text-primary mb-0">CCTV</h5>
+                            <h3 class="mb-3">Installation</h3>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="flaticon-surveillance d-block display-1 fw-normal text-secondary mb-3"></i>
+                            <h5 class="text-primary mb-0">CCTV</h5>
+                            <h3 class="mb-3">Configuration</h3>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="flaticon-camera d-block display-1 fw-normal text-secondary mb-3"></i>
+                            <h5 class="text-primary mb-0">CCTV</h5>
+                            <h3 class="mb-3">Maintenance</h3>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="flaticon-double d-block display-1 fw-normal text-secondary mb-3"></i>
+                            <h5 class="text-primary mb-0">CCTV</h5>
+                            <h3 class="mb-3">Repair & Service</h3>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="flaticon-security-system d-block display-1 fw-normal text-secondary mb-3"></i>
+                            <h5 class="text-primary mb-0">CCTV</h5>
+                            <h3 class="mb-3">Monitoring</h3>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="flaticon-recorder d-block display-1 fw-normal text-secondary mb-3"></i>
+                            <h5 class="text-primary mb-0">CCTV</h5>
+                            <h3 class="mb-3">Access Control</h3>
+                            <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                            <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
     </div>
 </div>
 
