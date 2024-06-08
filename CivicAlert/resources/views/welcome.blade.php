@@ -16,8 +16,8 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Réparez Votre Ville</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Ensemble pour une Ville Meilleure !</h3>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 ">Déclarer</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 ">Contacter nous</a>
+                        <a href="/createReport" class="btn btn-success py-md-3 px-md-5 me-3 ">Déclarer</a>
+                        <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
             </div>
@@ -27,8 +27,8 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Détecter, Signaler, Résoudre</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Améliorez Votre Quartier !</h3>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 ">Déclarer</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 ">Contacter nous</a>
+                        <a href="/createReport" class="btn btn-success py-md-3 px-md-5 me-3 ">Déclarer</a>
+                        <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
             </div>
@@ -53,16 +53,16 @@
         <div class="row gx-5">
             <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="img/about.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.3s" src="img/safety.webp" style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-7">
                 <div class="mb-4">
                     <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h5>
-                    <h1 class="display-5 mb-0">We Offers Quality CCTV Systems & Services</h1>
+                    <h1 class="display-5 mb-0">Une Ville Plus Belle Commence par Vous : Découvrez Notre Plateforme de Signalement Urbain!</h1>
                 </div>
-                <h4 class="text-body fst-italic mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore</h4>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna</p>
+                
+                
                 <div class="row g-3">
                     <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
                         <div class="bg-primary d-flex flex-column justify-content-center text-center border-bottom border-5 border-secondary rounded p-3" style="height: 200px;">
