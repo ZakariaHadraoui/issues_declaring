@@ -25,6 +25,18 @@ class ReportController extends Controller
         return view('reports.create');
 
     }
+    public function updateStatus(Request $request, Report $report)
+    {
+        $request->validate([
+            'status' => 'required|in:reçu,lu', // Adjust the status values as needed
+        ]);
+
+        $report->update([
+            'status' => $request->input('status'),
+        ]);
+
+        return redirect()->back()->with('success', 'Status updated successfully!');
+    }
 
     /**
      * Store a newly created resource in storage.
