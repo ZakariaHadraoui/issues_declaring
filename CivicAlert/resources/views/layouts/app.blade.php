@@ -55,8 +55,32 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="tel:+123456789" class="nav-item nav-link nav-contact bg-secondary text-white px-5 ms-lg-5"><i class="bi bi-telephone-outbound me-2"></i>+123 456 789</a>
-                    </div>
+                        @if (Auth::check())
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                @if(Auth::user()->role == 'admin')
+
+                                <a href="{{ route('admin.dashboard') }}" class="dropdown-item">Admin </a>
+                                @else
+                                    <!-- Display regular user options -->
+                                    {{-- <a class="dropdown-item" href="{{ route('profile') }}">Profile</a> --}}
+                                  
+                                @endif
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
+                            </div>
+                        </div>
+                   
+                    @else
+                        <a href="{{ route('login') }}" class="nav-item nav-link {{ Request::is('Contact') ? 'active' : '' }}">{{ trans('messages.login') }}</a>
+                        <a href="{{ route('register') }}" class="nav-item nav-link {{ Request::is('Contact') ? 'active' : '' }}">{{ trans('messages.register') }}</a>
+                    @endif                     </div>
                 </div>
             </nav>
             <!-- Navbar End -->
