@@ -34,7 +34,7 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <nav style="width: 90%" class="navbar  navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
             <a href="/" class="navbar-brand ms-lg-5">
             <a href="/" class="navbar-brand ms-lg-5">
                 <h1 class="display-5 m-0 text-primary">Civic<span class="text-secondary">Alert</span></h1>
