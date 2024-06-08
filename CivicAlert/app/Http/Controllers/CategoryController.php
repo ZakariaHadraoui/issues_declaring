@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ReportController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('categories.create');
     }
 
     /**
@@ -19,7 +19,7 @@ class ReportController extends Controller
      */
     public function create()
     {
-        //
+        return view('categories.create');
     }
 
     /**

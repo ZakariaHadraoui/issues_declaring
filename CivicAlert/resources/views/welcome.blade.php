@@ -16,7 +16,7 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Réparez Votre Ville</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Ensemble pour une Ville Meilleure !</h3>
-                        <a href="/createReport" class="btn btn-success py-md-3 px-md-5 me-3 ">Déclarer</a>
+                        <a href="{{ route('profil', ['id' => Auth::user()->id]) }}" class="btn btn-success py-md-3 px-md-5 me-3 ">Déclarer</a>
                         <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                 <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                     <div class="position-relative p-5">
                         <i class="flaticon-surveillance d-block display-1 fw-normal text-secondary mb-3"></i>
-                        <h3 class="mb-3">déchets non ramassés</h3>
+                        <h3 class="mb-3">déchets non ramassés</h3>
                         <p>Les déchets non ramassés peuvent nuire à l'esthétique de la ville et poser des risques pour la santé publique. Signalez les problèmes de collecte des déchets pour aider à maintenir un environnement propre et sain.</p>
                         <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
