@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <title>SafeCam - CCTV Website Template</title>
@@ -24,8 +25,9 @@
     <link href="{{ asset('lib/animate/animate.min.css') }}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
+    
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
+   
     <!-- Template Stylesheet -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
@@ -33,6 +35,7 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+            <a href="/" class="navbar-brand ms-lg-5">
             <a href="/" class="navbar-brand ms-lg-5">
                 <h1 class="display-5 m-0 text-primary">Civic<span class="text-secondary">Alert</span></h1>
             </a>
@@ -56,7 +59,7 @@
                         </div>
                     @else
                         <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
-                        <a href="{{ route('register') }}" class="nav-item nav-link">Register</a>
+                        <a href="{{ route('register') }}" class="nav-item nav-link">Register </a>
                     @endif
                 </div>
             </div>
@@ -82,10 +85,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
-    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
+   
 
     <!-- Template Javascript -->
     <!-- Inclure CSS de Bootstrap -->
