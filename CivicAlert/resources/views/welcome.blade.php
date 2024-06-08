@@ -16,8 +16,8 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Réparez Votre Ville</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Ensemble pour une Ville Meilleure !</h3>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Quote</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 ">Déclarer</a>
+                        <a href="" class="btn btn-secondary py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
             </div>
@@ -27,8 +27,8 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Détecter, Signaler, Résoudre</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Améliorez Votre Quartier !</h3>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Get Quote</a>
-                        <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 ">Déclarer</a>
+                        <a href="" class="btn btn-secondary py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
             </div>
