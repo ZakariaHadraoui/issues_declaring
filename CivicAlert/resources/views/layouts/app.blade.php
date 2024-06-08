@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-
-   
-    
-
-
 <head>
     <meta charset="utf-8">
     <title>SafeCam - CCTV Website Template</title>
@@ -40,8 +34,8 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
-        {{-- @include('layouts.navigation') --}}
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+            <a href="/" class="navbar-brand ms-lg-5">
             <a href="/" class="navbar-brand ms-lg-5">
                 <h1 class="display-5 m-0 text-primary">Civic<span class="text-secondary">Alert</span></h1>
             </a>
@@ -50,43 +44,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
-                            <div class="dropdown-menu m-0">
-                                <a class="dropdown-item" href="{{ route('login') }}">Citoyen</a>
-                                <a class="dropdown-item" href="{{ route('login') }}">Autorite Locales</a>
-                           
-                            </div>
-                        </div> 
                     @if (Auth::check())
-                        <div class="dropdown">
+                        <div class="nav-item dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user"></i>
                             </button>
-
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-                                <button type="submit" class="dropdown-item">Logout.</button>
-                            </form>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">Logout</button>
+                                </form>
+                            </div>
                         </div>
+                    @else
+                        <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
+                        <a href="{{ route('register') }}" class="nav-item nav-link">Register </a>
+                    @endif
                 </div>
-            @else
-                <!-- Bouton de connexion avec menu déroulant -->
-                
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">register</a>
-                    <div class="dropdown-menu m-0">
-                        <a class="dropdown-item" href="{{ route('register') }}">Citoyen</a>
-                        <a class="dropdown-item" href="{{ route('register') }}">Autorite Locales</a>
-                   
-                    </div>
-                @endif
             </div>
-    </div>
-    </nav>
+        </nav>
+        
     <!-- Navbar End -->
 
 
