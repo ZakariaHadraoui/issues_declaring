@@ -3,6 +3,8 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CitoyenController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,3 +36,14 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+Route::group(['middleware' => ['auth', 'role:admin']], function() {
+});
+
+Route::group(['middleware'=>'admin'], function () {
+
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+});
+
