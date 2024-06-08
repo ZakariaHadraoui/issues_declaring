@@ -35,16 +35,12 @@
 	  <ul class="sidebar-menu do-nicescrol">
 		 <li class="sidebar-header">MAIN NAVIGATION</li>
 		 <li>
-		   <a href="index.html">
+		   <a href="/">
 			 <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
 		   </a>
 		 </li>
    
-		 <li>
-		   <a href="icons.html">
-			 <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
-		   </a>
-		 </li>
+		
    
 		 <li>
 		   <a href="/categories">
@@ -127,7 +123,13 @@
 			   <li class="dropdown-divider"></li>
 			   <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
 			   <li class="dropdown-divider"></li>
-			   <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
+			   <li class="dropdown-item">
+				<form method="POST" action="{{ route('logout') }}">
+					@csrf
+					<button type="submit" class="dropdown-item">Logout</button>
+				</form>
+				 
+			</li>
 			 </ul>
 		   </li>
 		 </ul>

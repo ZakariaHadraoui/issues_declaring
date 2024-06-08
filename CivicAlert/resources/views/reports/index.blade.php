@@ -30,13 +30,13 @@
 					  <td>{{$report->description}}</td>
 					  <td>{{$report->Longitude}}</td>
 					  <td>{{$report->latitude}}</td>
-					  <td><a href="" class="btn btn-secondary">{{$report->status}}</a></td>
-					  <form action="{{ route('update-status', $report->id) }}" method="POST">
+					  <td><a href="" class="btn btn-danger">{{$report->status}}</a></td>
+					  <td><form action="{{ route('update-status', $report->id) }}" method="POST">
 						@csrf
 						@method('PUT')
 						<input type="hidden" name="status" value="lu">
 						<button type="submit" class="btn btn-success">Marquer Comme lu</button>
-					  </form>
+					  </form></td>
 					  <td><a class="btn btn-primary" href="">Modifier</a></td>
 					  <td><a class="btn btn-danger" href="">Supprimer</a></td>
 				  </tr>

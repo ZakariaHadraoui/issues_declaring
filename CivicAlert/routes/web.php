@@ -34,6 +34,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
  Route::resource('reports', ReportController :: class );
 
+
  Route::resource('categories', CategoryController :: class );
 
 
@@ -41,6 +42,9 @@ Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit')
 Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+Route::get('/profil/{id}', [UserController::class, 'show'])->name('profil');
+
+
 
 
 Route::put('/reports/{report}/update-status', [ReportController::class, 'updateStatus'])->name('update-status');
@@ -53,7 +57,6 @@ Route::put('/reports/{report}/update-status', [ReportController::class, 'updateS
 Route::middleware('auth')->group(function () {
    
 
-    Route::get('/profilee/{id}', [userController::class, 'show'])->name('profil');
     Route::get('/declaration',[declarationcontroller::class,'show'])->name('declaration');
     
 
