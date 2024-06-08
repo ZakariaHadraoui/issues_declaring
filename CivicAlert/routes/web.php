@@ -3,6 +3,8 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReportController;
+use App\Http\Controllers\declarationcontroller;
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Route;
 
@@ -49,9 +51,20 @@ Route::put('/reports/{report}/update-status', [ReportController::class, 'updateS
 
 
 Route::middleware('auth')->group(function () {
+   
+
+    Route::get('/profilee/{id}', [userController::class, 'show'])->name('profil');
+    Route::get('/declaration',[declarationcontroller::class,'show'])->name('declaration');
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 require __DIR__.'/auth.php';
+
+
+
+
+
+
