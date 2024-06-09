@@ -4,27 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Report;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ReportController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        $reports=Report::all();
-
-        return view('reports.index',compact('reports'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('reports.create');
-
-    }
     public function updateStatus(Request $request, Report $report)
     {
         $request->validate([
@@ -37,44 +20,29 @@ class ReportController extends Controller
 
         return redirect()->back()->with('success', 'Status updated successfully!');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
+    public function index(){
+        $reports=Report::all();
+        return view('reports.index',compact('reports'));
     }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
+    public function create(){
+        return view('user.declare');
     }
+    public function store(Request $request){
+        $request->validate([
+            'title' =>'required',   
+            
+            'description' =>'required',
+        ]);
+        $report=new Report();
+        $report->title=$request->title;
+        $report->user_id=Auth::user()->id;
+        $report->description=$request->description;
+        $report->latitude=5;
+        $report->longitude=9;
+        $report->save();
+        return redirect()->back()->with('success','Déclaration envoyé');
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
+    
+    
 }

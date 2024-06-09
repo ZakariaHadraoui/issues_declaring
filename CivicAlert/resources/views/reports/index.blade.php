@@ -1,5 +1,10 @@
 @extends('layouts.dashboard')
 @section('main')
+@if(session('success'))
+        <div class="alert alert-success p-3">
+            {{ session('success') }}
+        </div>
+    @endif
 <div style="width: 70vw" class="row">
 	<div class="col-12 col-lg-12">
 	  <div class="card">

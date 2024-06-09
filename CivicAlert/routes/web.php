@@ -20,8 +20,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')->name('welcome');
 });
+Route::get('/declare',[userController::class, 'declare']);
 
 
 
@@ -36,6 +37,10 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
 
  Route::resource('categories', CategoryController :: class );
+
+
+Route::post('/postdec', [ReportController::class, 'store'])->name('postdec');
+
 
 
 Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

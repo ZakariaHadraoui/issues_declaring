@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+@if(session('success'))
+        <div class="alert alert-success p-3">
+            {{ session('success') }}
+        </div>
+    @endif
 
  <!-- Carousel Start -->
  <div class="container-fluid p-0 mb-5">
@@ -16,11 +21,12 @@
                     <div class="p-3" style="max-width: 900px;">
                         <h5 class="text-white text-uppercase animated bounceInDown">Réparez Votre Ville</h5>
                         <h3 class="display-1 text-white mb-md-4 animated zoomIn">Ensemble pour une Ville Meilleure !</h3>
-                        @if (Auth::check())
+
+                        @if(Auth::check())
                         <a href="{{ route('profil', ['id' => Auth::user()->id]) }}" class="btn btn-success py-md-3 px-md-5 me-3 ">Déclarer</a>
-                            
                         @endif
-                        <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
+                        
+                                            <a href="" class="btn btn-danger py-md-3 px-md-5 ">Contacter nous</a>
                     </div>
                 </div>
             </div>
@@ -98,20 +104,22 @@
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                 <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                     <div class="position-relative p-5">
-                        <i class="flaticon-cctv d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <i class="bi bi-lightbulb d-block display-1 fw-normal text-secondary mb-3"></i>
+
                         <h3 class="mb-3"> des pannes d'éclairage</h3>
                         <p>Les pannes d'éclairage public peuvent rendre les rues moins sûres la nuit et accroître le risque d'accidents. En signalant ces pannes, vous aidez les services municipaux à rétablir rapidement un éclairage adéquat, améliorant ainsi la sécurité</p>
-                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="/declare">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                 <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                     <div class="position-relative p-5">
-                        <i class="flaticon-surveillance d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <i class="bi bi-trash d-block display-1 fw-normal text-secondary mb-3"></i>
+
                         <h3 class="mb-3">déchets non ramassés</h3>
                         <p>Les déchets non ramassés peuvent nuire à l'esthétique de la ville et poser des risques pour la santé publique. Signalez les problèmes de collecte des déchets pour aider à maintenir un environnement propre et sain.</p>
-                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="/declare">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -119,10 +127,11 @@
             <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                 <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                     <div class="position-relative p-5">
-                        <i class="flaticon-double d-block display-1 fw-normal text-secondary mb-3"></i>
+                        <i class="bi bi-exclamation-diamond d-block display-1 fw-normal text-secondary mb-3"></i>
+
                         <h3 class="mb-3">les nids-de-poule sur les routes</h3>
                         <p>Les nids-de-poule peuvent endommager les véhicules et représenter un danger pour les piétons et les cyclistes. Signalez-les pour aider à maintenir nos routes en bon état et assurer la sécurité de tous. </p>
-                        <a href="">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="/declare">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
